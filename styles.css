@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: "Mulish", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 40px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #424247;
+}
+
+.nav-menu li:first-child {
+    color: #FF5400;
+    font-weight: 700;
+}
+
+.banner {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/banner.png');
+    width: 100%;
+    min-height: 500px;
+    border-radius: 16px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.banner h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.input-container {
+    max-width: 720px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.input-container input {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.submit-button {
+    background: #FF5400;
+    color: #FFF;
+}
+
+@media screen and (max-width:992px) {
+    .nav-menu {
+        display: none;
+    }
+    .input-container input {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+}
