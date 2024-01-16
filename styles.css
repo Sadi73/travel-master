@@ -1,50 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-    width: 80%;
-    margin: auto;
+    /* width: 80%;
+    margin: auto; */
+    margin: 0;
     font-family: "Mulish", sans-serif;
 }
 
-nav {
+header {}
+
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav-title {
+header nav .nav-title {
     display: flex;
     gap: 10px;
 }
 
-.nav-menu {
+header nav .nav-menu,
+.deals-discounts ul {
     list-style: none;
     font-size: 18px;
 }
 
-.nav-menu li {
+header nav .nav-menu li,
+.deals-discounts ul li {
     display: inline;
     margin-right: 40px;
 }
 
-.nav-menu li a {
+header nav .nav-menu li a {
     text-decoration: none;
     color: #424247;
 }
 
-.nav-menu li:first-child {
+header nav .nav-menu li:first-child {
     color: #FF5400;
     font-weight: 700;
 }
 
 .banner {
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/banner.png');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     width: 100%;
     min-height: 500px;
     border-radius: 16px;
     margin-top: 50px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner h1 {
@@ -156,7 +164,10 @@ nav {
     background: rgba(41, 206, 246, 0.05);
 }
 
-.deals-discounts {}
+.deals-discounts {
+    margin-top: 100px;
+    text-align: center;
+}
 
 .deals-discounts .deals-card {
     border-radius: 16px;
@@ -167,7 +178,7 @@ nav {
     height: 300px;
     flex-shrink: 0;
     padding: 40px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     top: 50px;
     left: 30%;
@@ -214,12 +225,15 @@ nav {
 .newsletter {
     margin-top: 100px;
     display: flex;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .newsletter .left {
+    width: 45%;
     border-radius: 16px;
     border: 1px solid #FF5400;
+    padding: 20px;
 }
 
 .newsletter .right {
@@ -231,7 +245,10 @@ nav {
 }
 
 footer {
+    margin-top: 100px;
     background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding: 20px;
 }
 
 
