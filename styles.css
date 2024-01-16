@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-    /* width: 80%;
-    margin: auto; */
     margin: 0;
     font-family: "Mulish", sans-serif;
 }
@@ -104,7 +102,7 @@ header nav .nav-menu li:first-child {
 
 .popular-tours #left,
 .popular-tours #right {
-    max-width: 45%;
+    width: 45%;
 }
 
 
@@ -174,14 +172,12 @@ header nav .nav-menu li:first-child {
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-    width: 579px;
-    height: 300px;
-    flex-shrink: 0;
-    padding: 40px;
-    position: relative;
-    bottom: 0;
-    top: 50px;
-    left: 30%;
+    width: 460px;
+    padding: 25px;
+    position: absolute;
+    bottom: 90px;
+    top: 90px;
+    left: 56%;
     right: 0;
 }
 
@@ -190,6 +186,7 @@ header nav .nav-menu li:first-child {
     height: 500px;
     border-radius: 8px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .deals-discounts .deals-row-2 {
@@ -204,6 +201,7 @@ header nav .nav-menu li:first-child {
     height: 500px;
     border-radius: 8px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .simple-perfect-place {
@@ -234,6 +232,17 @@ header nav .nav-menu li:first-child {
     border-radius: 16px;
     border: 1px solid #FF5400;
     padding: 20px;
+}
+
+.newsletter .left input {
+    width: 90%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+
+
 }
 
 .newsletter .right {
@@ -273,10 +282,17 @@ footer {
     .popular-tours #right,
     .simple-perfect-place .left,
     .simple-perfect-place .right,
-    .newsletter .right,
-    .newsletter .left {
+    .newsletter .right {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .deals-discounts .deals-card{
+        left: 20%;
+    }
+
+    .newsletter .left {
+        width: 90%;
     }
 
     .choose-destination .row-1,
